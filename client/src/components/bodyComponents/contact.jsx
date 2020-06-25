@@ -9,7 +9,10 @@ export default class Contact extends React.Component {
   }
   render(){
     return (
-      <div>Contact</div>
+      <div>
+        <h1>Contact Me</h1>
+        <h3>You can reach me at chrissanchez89@gmail.com</h3>
+      </div>
     )
   }
 

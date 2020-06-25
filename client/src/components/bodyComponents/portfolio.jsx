@@ -1,16 +1,12 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 
-export default class Portfolio extends React.Component {
-  constructor(props){
-    super(props)
+export default function Portfolio () {
 
-    this.state = {}
-  }
-  render(){
-    return (
-      <div>Portfolio</div>
-    )
-  }
 
+  return (
+    <div>
+      Here is where I will have to plan out more info
+    </div>
+  );
 }
