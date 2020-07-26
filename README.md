@@ -23,5 +23,5 @@ NFTE offers schools and partners a unique combination of high-impact student pro
 4. Run the server:
 `npm run start`
 
-5. If you need help, just ask
-[Find me on LinkedIn](https://www.linkedin.com/in/csanchez11)
+5. If you need help,
+[ask me on LinkedIn](https://www.linkedin.com/in/csanchez11)
