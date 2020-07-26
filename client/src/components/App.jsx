@@ -6,10 +6,14 @@ import { StyleSheet, css } from 'aphrodite';
 
 const styles = StyleSheet.create({
   background: {
+    fontFamily: 'Titillium Web',
+    marginTop: '100px',
     maxWidth: '100%',
-    height: 800,
-    backgroundColor: '#C6C5C5',
+    height: '100%',
+    minHeight: '750px',
+    backgroundColor: '#fff',
   },
+
 })
 
 

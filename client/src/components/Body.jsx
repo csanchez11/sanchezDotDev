@@ -7,12 +7,30 @@ import Contact from './bodyComponents/contact.jsx';
 
 const styles = StyleSheet.create({
 
-  innerBox: {
+  outerBox: {
     display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'flex-end',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    flexDirection: 'column',
   },
-
+  buttonBox: {
+    margin: '50px 0 50px 0',
+  },
+  button: {
+    height: '50px',
+    width: '100px',
+    fontFamily: 'Titillium Web',
+    fontSize: '1em',
+    fontWeight: '700',
+    margin: '0 25px 0 25px',
+  },
+  hover: {
+    ':hover': {
+        backgroundColor: '#fd4345',
+        color: 'white',
+        boxShadow: '0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)',
+    },
+  },
 })
 
 export default class Body extends React.Component {
@@ -61,11 +79,15 @@ export default class Body extends React.Component {
     }
 
     return (
-      <div>
-        <button id='portfolio' onClick={this.clickHandler}>Portfolio</button>
-        <button id='resume' onClick={this.clickHandler}>Resume</button>
-        <button id='contact' onClick={this.clickHandler}>Contact</button>
-        {element}
+      <div className={css(styles.outerBox)}>
+        <div className={css(styles.buttonBox)}>
+          <button id='portfolio' className={css(styles.button, styles.hover)} onClick={this.clickHandler}>Portfolio</button>
+          <button id='resume' className={css(styles.button, styles.hover)} onClick={this.clickHandler}>Resume</button>
+          <button id='contact' className={css(styles.button, styles.hover)} onClick={this.clickHandler}>Contact</button>
+        </div>
+        <div>
+          {element}
+        </div>
       </div>
     )
 
