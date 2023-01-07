@@ -31,7 +31,7 @@ export default function Resume(props){
 
   return (
     <div className={css(styles.resBox)}>
-      <button className={css(styles.button, styles.hover)} onClick={event =>  window.location.href='http://localhost:3000/resume'}>PDF</button>
+      <button className={css(styles.button, styles.hover)} onClick={event =>  window.location.href='https://sanchezdotdev.s3-us-west-1.amazonaws.com/ResumeChrisSanchez.pdf'}>PDF</button>
       <img src={'https://sanchezdotdev.s3-us-west-1.amazonaws.com/ResumeChrisSanchez.png'}/>
     </div>
   )
